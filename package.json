@@ -1,0 +1,11 @@
+{
+  "name": "js-basics-webpack",
+  "version": "1.0.0",
+  "description": "A sample repository for the Exchange.js JavaScript Basics talk on Webpack",
+  "main": "index.js",
+  "author": "Mark Bennett <mark@burmis.ca>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
