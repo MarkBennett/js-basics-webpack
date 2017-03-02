@@ -1,3 +1,3 @@
 import bar from './bar';
 
-bar();
+bar(1, "two", []);

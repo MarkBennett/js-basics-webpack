@@ -68,24 +68,37 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = bar;
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = bar;
 function bar() {
-  //
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  console.log("This function was called with ", args);
 }
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bar__ = __webpack_require__(0);
 
 
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__bar__["a" /* default */])();
+var _bar = __webpack_require__(0);
+
+var _bar2 = _interopRequireDefault(_bar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _bar2.default)(1, "two", []);
 
 /***/ })
 /******/ ]);
